@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from 'react-router-dom'
 import "./NavBar.css";
 
 
@@ -10,9 +10,9 @@ import "./NavBar.css";
     <header>
     <nav class="navbar navbar-default">
       <div class="navbar-header">
-        <a class="navbar-brand" href="/">
+        <Link class="navbar-brand" to="/profile">
           <i class="fa fa-cube"></i>Brand<b>Name</b>
-        </a>
+        </Link>
         <button
           type="button"
           data-target="#navbarCollapse"
@@ -42,9 +42,9 @@ import "./NavBar.css";
             </a>
             <ul class="dropdown-menu">
               <li>
-                <a href="/">
+                <Link to="/user">
                   <i class="fa fa-user-o"></i> Profile
-                </a>
+                </Link>
               </li>
              
               

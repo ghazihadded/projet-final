@@ -1,15 +1,17 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
+
 
 export const CardFile = () => {
     return (
         <div>
               <div className="card my-profile">
-      <img
+      <Link to='/user'> <img
         style={{ width: "100%", borderRadius: "50%" }}
         src="https://www.tutorialrepublic.com/examples/images/avatar/2.jpg"
         className="card-img-top"
         alt=""
-      />
+      /></Link>
       <div className="card-body">
         <h5 className="card-title">Card title</h5>
         <p className="card-text">
